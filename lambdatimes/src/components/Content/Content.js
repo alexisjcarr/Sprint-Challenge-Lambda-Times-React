@@ -4,6 +4,7 @@ import Tabs from "./Tabs";
 import Cards from "./Cards";
 import TopBar from "../TopBar";
 import Header from "../Header";
+import Carousel from "../Carousel/Carousel";
 
 // Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from "../../data";
@@ -63,6 +64,7 @@ export default class Content extends Component {
       <div className="App">
         <TopBar />
         <Header />
+        <Carousel />
         <div className="content-container">
           {/* 
           Add 2 props to the Tabs component, 
