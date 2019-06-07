@@ -48,6 +48,11 @@ A Higher Order Component (HOC) is an advanced React pattern that gives the devel
 
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
 
+•   Inline styling  
+•   CSS/CSS-Preprocessor stylesheet  
+•   Styled components
+
+
 ## Project Setup
 
 Follow these steps to set up your project:
