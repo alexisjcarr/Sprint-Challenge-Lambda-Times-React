@@ -64,7 +64,6 @@ export default class Content extends Component {
       <div className="App">
         <TopBar />
         <Header />
-        <Carousel />
         <div className="content-container">
           {/* 
           Add 2 props to the Tabs component, 
@@ -76,6 +75,7 @@ export default class Content extends Component {
             selectedTab={this.state.selected}
             selectedTabHandler={this.changeSelected}
           />
+          <Carousel />
           <Cards cards={this.filterCards()} />
         </div>
       </div>
