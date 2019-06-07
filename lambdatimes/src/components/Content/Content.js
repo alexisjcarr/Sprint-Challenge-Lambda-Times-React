@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import Tabs from "./Tabs";
 import Cards from "./Cards";
+import TopBar from "../TopBar";
+import Header from "../Header";
 
 // Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from "../../data";
@@ -58,18 +60,22 @@ export default class Content extends Component {
 
   render() {
     return (
-      <div className="content-container">
-        {/* 
+      <div className="App">
+        <TopBar />
+        <Header />
+        <div className="content-container">
+          {/* 
           Add 2 props to the Tabs component, 
           `selectedTab` that includes the currently selected tab
           and `selectTabHandler` that includes the function to change the selected tab
         */}
-        <Tabs
-          tabs={this.state.tabs}
-          selectedTab={this.state.selected}
-          selectedTabHandler={this.changeSelected}
-        />
-        <Cards cards={this.filterCards()} />
+          <Tabs
+            tabs={this.state.tabs}
+            selectedTab={this.state.selected}
+            selectedTabHandler={this.changeSelected}
+          />
+          <Cards cards={this.filterCards()} />
+        </div>
       </div>
     );
   }
